@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Forms. We don't need no steeking forms!
+    </title>
+  </head>
+  <body>
+    <h1>A Form.</h1>
+    <form action="forms.html" method="get" name="myform>
+      <fieldset>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName"/>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+      </fieldset>
+
+<!-- Allows for the text to be clickable as well as the checkbox when you put the text
+inside the label tags -->
+      <fieldset>
+          <label for="isAwesome">
+            is Awesome?
+            <input type="checkbox" name="isAwesome" id="isAwesome">
+          </label>
+      </fieldset>
+
+<!-- Radio buttons only allow 1 box to be checked at a time -->
+<!-- The name fields must match to toggle back and forth -->
+      <fieldset>
+        <label for="height">
+          tall
+          <input type="radio" name="height" id="height_tall" value="tall">
+        </label>
+        <label>
+          short
+          <input type="radio" name="height" id="height_short" value="short">
+        </label>
+      </fieldset>
+
+      <input type="button" name="hello_button" id="hello_button" value="hello"/>
+      <input type="submit" value="submit" id="submit">
+      <input type="reset" value="reset" id="reset">
+    </form>
+  </body>
+
+
+</html>
