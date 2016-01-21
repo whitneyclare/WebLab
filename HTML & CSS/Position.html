@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Positions</title>
+    <style media="screen">
+      body {
+        background: black;
+        background-image: url(image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; cannot have a bg position if using bg-size (above) */
+        height: 600px;
+        color: #fff;
+        margin: 0px;
+        padding: 10px;
+      }
+
+      div {
+        padding: 15px 15px 15px 40px;
+        /*font-size: 2em; 32px */
+        font-size: 2rem;
+        font-weight: 300; /* 400 is normal, 600 is bold */
+        letter-spacing: 5px;
+        line-height: 2.3; /* you do not need a unit */
+        text-shadow: 7px 5px 5px rgba(0,0,0,1); /* left/right up/down blur color*/
+        box-shadow: 7px 5px 5px rgba(0,0,0,1); /* box-shadow must be in div and div:hover*/
+        color: #fff;
+        transition: all .5s ease;
+        /*text-align: center;*/
+        text-decoration: none; /* use none to remove underlining from a link */
+        text-indent: 3em;
+      }
+
+      div:hover {
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+      }
+
+      a:active {
+        color: yellow;
+      }
+
+      a:visited {
+        text-decoration: line-through;
+      }
+
+      .testbed {
+        height: 100px;
+        width: 100px;
+        background-color: lightblue;
+        position: static; /* options- relative, static(default), absolute, fixed */
+        margin: 0 auto; /* auto only works with static and relative, otherwise use margin-left/right */
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Positions</h1>
+    <div class="testbed"></div>
+    <div class="container">
+      Sample Text
+    </div>
+  </body>
+</html>

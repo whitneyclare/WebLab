@@ -5,6 +5,20 @@
     <title>
       CSS Intro
     </title>
+    <style media="screen">
+      p {
+        font-family: sans-serif;
+      }
+      p>a {
+        color: pink;
+      }
+      .header {
+        border: 1px solid red;
+      }
+      #special {
+        color: aliceblue;
+      }
+    </style>
   </head>
   <body>
     <div class="header">
@@ -14,11 +28,12 @@
     </div>
     <div class="content">
       <p>
-        Some Content
+        Some content goes <a href="http://google.com">here.</a>
       </p>
       <p id="special">
         Some more content.
       </p>
+      <a href="http://bing.com">Search</a>
     </div>
     <div class="footer">
       copyright &copy; 2016
