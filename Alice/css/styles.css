@@ -1,0 +1,81 @@
+/************************* Cover Page ***********************/
+body {
+margin: 0;
+padding: 0;
+background-image: url(clocks.jpg);
+background-size: cover;
+}
+h1 {
+  background-color: rgba(255, 0, 0, 0.76);
+  background-size: cover;
+  font-family: fantasy;
+  padding: 40px 20px;
+  margin: 0;
+  text-align: center;
+  color: black;
+  border-bottom: 1px solid black;
+}
+h3 {
+  text-align: center;
+  font-family: cursive;
+  background-color: lightgray;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  margin-top: 0;
+}
+h2{
+  color: red;
+  font-family: fantasy;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: red;
+}
+a:hover {
+  text-decoration: underline;
+}
+.chapters {
+  background-color: white;
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin: auto;
+  height: 400px;
+  width: 800px;
+}
+li {
+  display: inline-table;
+  padding: 0;
+  margin: 0;
+}
+.ch1 {
+  width: 31%;
+  height: 100px;
+  margin-left: 0;
+  margin-right: 10px;
+}
+.ch2 {
+  width: 31%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ch3 {
+  width: 31%;
+  margin-left: 0;
+  margin-right: 0;
+}
+img {
+  border: 1px solid black;
+}
+
+/************************* Chapter 1 *************************/
+
+.container {
+  color: black;
+  box-sizing: border-box;
+  width: 600px;
+  margin: 20px auto;
+  background-color: lightgray;
+  padding: 5px 10px;
+}
