@@ -15,16 +15,26 @@ userTable.on("click", "button.remove", function(){ //there is no event listener 
 
 add_btn.on("click", function(){
 
-  addUser({
-    name: nameField.val(), // a getter , gets a value
-    email: emailField.val()
-  });
+  var name = nameField.val(); // a getter , gets a value
+  var email= emailField.val();
 
-//the function addUser is run (above),
-//then the nameField and emailField is cleared (below)
+  if(email.match(/^.+?\@.+\..+?$/)){
+    emailField.removeClass("invalid");
 
-  nameField.val(""); // a setter, passing in an empty string clears the field
-  emailField.val("");
+    addUser({
+      name: name,
+      email: email
+    });
+
+    nameField.val(""); // a setter, passing in an empty string clears the field
+    emailField.val("");
+  } else {
+    emailField.addClass("invalid");
+  }
+
+//the function addUser is run,
+//then the nameField and emailField is cleared
+
 });
 
 function addUser(user) {

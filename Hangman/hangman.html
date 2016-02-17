@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hang Man</title>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <style>
+
+    #moves {
+      border: 1px solid #666;
+      width: 200px;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    #guesses {
+      border-top: 1px solid #333;
+      margin-top: 80px;
+      padding-top: 20px;
+    }
+
+    #letters {
+
+    }
+
+    .letter {
+      border: 1px solid #999;
+      padding: 8px;
+      margin: 4px;
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      font-family: monospace;
+      cursor: pointer;
+    }
+
+    #guesses .letter:hover {
+      background: #ccc;
+    }
+
+    #guesses .letter.selected {
+      background: #333;
+      color: #999;
+    }
+
+    #letters .letter.missed {
+      background: #c33;
+    }
+
+
+    </style>
+</head>
+<body>
+
+  <button id="new_game">New Game</button>
+  <label>Turns</label>
+  <input type="text" id="turns_settings" value="6" size="2">
+  <hr>
+  <div id="moves">
+    <h4>Turns Left</h4>
+    <div id="turns"></div>
+  </div>
+  <div id="letters">
+      
+  </div>
+
+  <div id="guesses"></div>
+
+
+  <script type="text/javascript" src="hangman.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Classic Layouts (oooo, retro!)</title>
+  <style media="screen">
+    /* Reset Body */
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Header */
+    .header {
+      background-color: lightgreen;
+    }
+
+    /* Content */
+    .content {
+      background-color: #ccc;
+    }
+    .content>div {
+      float: left;
+    }
+    .sidebar {
+      background-color: tan;
+      width: 25%;
+    }
+    .main {
+      background-color: #fff;
+      width: 50%;
+    }
+    .ads {
+      background-color: green;
+      width: 25%;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: lightblue;
+    }
+
+    /* Utility Rules */
+    .clearfix:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    header
+  </div>
+  <div class="content clearfix">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="#">link1</a>
+        </li>
+        <li>
+          <a href="#">link2</a>
+        </li>
+        <li>
+          <a href="#">link3</a>
+        </li>
+        <li>
+          <a href="#">link4</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi mollitia accusantium perferendis, velit consequatur ut facere debitis fugiat. Ad nam reiciendis quo, nihil, nemo reprehenderit et voluptates harum debitis itaque.</p>
+      <p>Blanditiis nam, consectetur hic, reiciendis odio perferendis cupiditate suscipit porro inventore quidem dolore mollitia cumque veritatis sunt at dolores velit molestiae nihil non laudantium laborum, ullam. At earum voluptates minima?</p>
+      <p>Consectetur sapiente rerum explicabo, vero cumque numquam sed autem nobis eligendi unde quos dignissimos sequi obcaecati commodi consequuntur esse dolore. Sint reiciendis modi consequuntur omnis, perferendis et laborum ea laboriosam!</p>
+      <p>A distinctio, nemo quisquam architecto delectus, nesciunt est accusantium eum reiciendis ea sint error. Necessitatibus rem pariatur perspiciatis temporibus, sapiente eius delectus, perferendis repellendus sit cupiditate maxime cum aliquam! Magni.</p>
+      <p>Delectus temporibus debitis ratione vitae molestiae dolor sed ea, nostrum aliquam reiciendis aperiam maiores rerum soluta! Sunt, exercitationem maxime at consectetur fuga perferendis, laboriosam rerum ut nisi odit ratione. Labore.</p>
+    </div>
+    <div class="ads">
+      ad$
+    </div>
+  </div>
+  <div class="footer">
+    footer
+  </div>
+</body>
+</html>

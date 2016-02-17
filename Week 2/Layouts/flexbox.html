@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox - the new hotness</title>
+  <style media="screen">
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: #BA51C1;
+      height: 50px;
+    }
+
+    .content {
+      background-color: #F02CE5;
+      flex: 1 1 auto;
+      display: flex;
+    }
+
+    .sidebar {
+      background-color: lightgrey;
+      width: 200px;
+      flex: 1 0 auto;
+    }
+
+    .main {
+      flex-shrink: 1;
+      background-color: #F02CE5;
+      overflow-y: scroll;
+    }
+
+    .ads {
+      background-color: lightgreen;
+      width: 150px;
+      display: flex;
+      flex: 1 0 auto;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .ad {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      display: flex;
+      flex:  0 0 auto;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      font-weight: 600;
+      font-family: sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .ad:first-child {
+      margin-top: 1rem;
+    }
+
+    .ad:after {
+      content: "$";
+      display: block;
+      color: #fff;
+    }
+
+    .footer {
+      background-color: #455;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    header
+  </div>
+  <div class="content clearfix">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="#">link1</a>
+        </li>
+        <li>
+          <a href="#">link2</a>
+        </li>
+        <li>
+          <a href="#">link3</a>
+        </li>
+        <li>
+          <a href="#">link4</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi mollitia accusantium perferendis, velit consequatur ut facere debitis fugiat. Ad nam reiciendis quo, nihil, nemo reprehenderit et voluptates harum debitis itaque.</p>
+      <p>Blanditiis nam, consectetur hic, reiciendis odio perferendis cupiditate suscipit porro inventore quidem dolore mollitia cumque veritatis sunt at dolores velit molestiae nihil non laudantium laborum, ullam. At earum voluptates minima?</p>
+      <p>Consectetur sapiente rerum explicabo, vero cumque numquam sed autem nobis eligendi unde quos dignissimos sequi obcaecati commodi consequuntur esse dolore. Sint reiciendis modi consequuntur omnis, perferendis et laborum ea laboriosam!</p>
+      <p>A distinctio, nemo quisquam architecto delectus, nesciunt est accusantium eum reiciendis ea sint error. Necessitatibus rem pariatur perspiciatis temporibus, sapiente eius delectus, perferendis repellendus sit cupiditate maxime cum aliquam! Magni.</p>
+      <p>Delectus temporibus debitis ratione vitae molestiae dolor sed ea, nostrum aliquam reiciendis aperiam maiores rerum soluta! Sunt, exercitationem maxime at consectetur fuga perferendis, laboriosam rerum ut nisi odit ratione. Labore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quasi consequuntur architecto autem similique laudantium doloremque dolor hic commodi nostrum ipsam quos, laborum tempore repellendus, voluptatum at aut perferendis unde!</p>
+      <p>Optio deleniti adipisci fugit nulla quidem, quo, impedit debitis velit autem eaque error dolores rem possimus soluta exercitationem deserunt repudiandae! Nostrum eveniet quae veritatis, deleniti illum velit, eos officia magni.</p>
+      <p>Fugit quia saepe non soluta molestiae, quos at veritatis et ex, minima id asperiores reprehenderit, deleniti! Amet doloribus illum numquam quasi nobis error aperiam earum eaque dolorem! Architecto, alias odio.</p>
+      <p>Voluptates molestias itaque obcaecati, adipisci sit dolores nam veniam doloribus architecto facilis necessitatibus! Odit aliquam rem, corporis placeat sunt, iure esse, reprehenderit ipsum error beatae minima ad assumenda. Est, amet!</p>
+    </div>
+    <div class="ads">
+      <div class="ad"></div>
+      <div class="ad"></div>
+      <div class="ad"></div>
+    </div>
+  </div>
+  <div class="footer">
+    footer
+  </div>
+</body>
+</html>

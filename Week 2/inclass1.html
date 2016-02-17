@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Transistions</title>
+  <style media="screen">
+    .block {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      color: #000;
+      /* transition-delay: 0;  how long to start, default is 0 sec
+      transition-duration: 1s;  written in seconds, with an "s"
+      transition-property: color;  what property we are affecting
+      transition-timing-function: ease; easings.net
+      shorthand below (transition: property duration timing-function delay) */
+      transition: color 1s ease 0s,
+                  background-color .5s linear 0s,
+                  border-radius 2s ease 0s,
+                  transform 1s ease 0s;
+    }
+
+    .block:hover {
+      color: #fff;
+    }
+
+    .rounded {
+      background-color: blue;
+      border-radius: 100px;
+    }
+
+    .moved {
+      transform: translate(300px, 0px) rotate(360deg) skew(34deg) scaleX(0.5);
+      /* translate(x axes, y axes)
+      scale is a ratio 0.5 = half 2 = double */
+    }
+  </style>
+
+  <style media="print">
+    body {
+      font-size: 18px;
+    }
+    .banner {
+      display: none;
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  </style>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+
+      var block = $('.block');
+      $('.button1').on('click', function(){
+        block.toggleClass('rounded');
+      });
+
+      $('.button2').on('click', function(){
+        block.toggleClass('moved');
+      });
+    });
+  </script>
+</head>
+<body>
+  <button type="button" name="button1" class="button1">click me!</button>
+  <button type="button" name="button2" class="button2">and me!</button>
+  <div class="block">
+      Hello, World!
+  </div>
+
+</body>
+</html>
