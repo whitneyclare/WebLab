@@ -20,3 +20,14 @@ $(document).ready(function(){
 
 
 });
+
+//Select a word
+// Accept guess letter
+// Determine if it is a correct or incorrect quess
+// If correct add to word boxes
+// If incorrect turn letter read
+// Decrease guess count
+
+// When guess count = 0 game over
+// New game button actions
+// When word correctly uncovered
