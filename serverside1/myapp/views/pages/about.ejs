@@ -1,0 +1,34 @@
+<!-- views/pages/about.ejs -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!--
+      Call the ejs include command and privdde the path to the partial to include.
+      Path is relative to this file
+   -->
+   <!-- Include our head.ejs file -->
+   <% include ../partials/head %>
+  </head>
+  <body>
+    <header>
+      <!-- Include the header of the page -->
+      <% include ../partials/header %>
+    </header>
+    <h3>I'm awesome because:</h3>
+    <ul>
+      <% reasons.forEach(function(reason){ %>
+        <li><%= reason.reason %></li>
+      <% }); %>
+    </ul>
+    <form class="" action="/about" method="post"> <!-- method=post is sending something to server -->
+      <label for="myReason">Because:</label>
+      <input type="text" name="myReason" id="myReason">
+      <button type="submit">add</button>
+    </form>
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+  </body>
+</html>
