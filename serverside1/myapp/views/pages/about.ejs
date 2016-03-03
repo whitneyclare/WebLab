@@ -18,8 +18,8 @@
     </header>
     <h3>I'm awesome because:</h3>
     <ul>
-      <% reasons.forEach(function(reason){ %>
-        <li><%= reason.reason %></li>
+      <% reasons.forEach(function(reason, i){ %>
+        <li><%= reason.reason %><a href="/about/<%=i%>">X</a></li>
       <% }); %>
     </ul>
     <form class="" action="/about" method="post"> <!-- method=post is sending something to server -->
