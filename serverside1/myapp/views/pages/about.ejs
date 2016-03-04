@@ -1,34 +1,40 @@
 <!-- views/pages/about.ejs -->
 
 <!DOCTYPE html>
-
 <html>
-  <head>
+<head>
     <!--
-      Call the ejs include command and privdde the path to the partial to include.
-      Path is relative to this file
-   -->
-   <!-- Include our head.ejs file -->
-   <% include ../partials/head %>
-  </head>
-  <body>
+        Call the ejs include command and provide the path to the
+        partial to include.  Path is relative to this file.
+    -->
+    <!-- Include our head.ejs file -->
+    <% include ../partials/head %>
+</head>
+<body>
     <header>
-      <!-- Include the header of the page -->
-      <% include ../partials/header %>
+        <!-- Include the header of the page -->
+        <% include ../partials/header %>
     </header>
+    <div class="content">
     <h3>I'm awesome because:</h3>
     <ul>
-      <% reasons.forEach(function(reason, i){ %>
-        <li><%= reason.reason %><a href="/about/<%=i%>">X</a></li>
-      <% }); %>
+        <!-- loop over the reasons array and out put its' values as members of the list -->
+        <% reasons.forEach(function(reason, i) { %>
+            <li><%= reason.reason %><a href="/about/<%=i%>">X</a></li>
+        <% }); %>
     </ul>
-    <form class="" action="/about" method="post"> <!-- method=post is sending something to server -->
-      <label for="myReason">Because:</label>
-      <input type="text" name="myReason" id="myReason">
-      <button type="submit">add</button>
+    <!--
+        Note the action of the form points to the same route, but the method is 'POST'  We will be capturing
+        the form input from the input box 'myReason'
+    -->
+    <form class="myReasonForm" id="myReasonForm" action="/about" method="post">
+        <label for="myReason">Because:</label>
+        <input type="text" name="myReason" id="myReason">
+        <button type="submit">add</button>
     </form>
+    </div>
     <footer>
-      <% include ../partials/footer %>
+        <% include ../partials/footer %>
     </footer>
-  </body>
+</body>
 </html>

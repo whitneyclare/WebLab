@@ -1,0 +1,43 @@
+<!-- views/pages/roll.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Call the ejs include command and provide the path to the
+        partial to include.  Path is relative to this file.
+    -->
+    <!-- Include our head.ejs file -->
+    <% include ../partials/head %>
+</head>
+<body>
+    <header>
+    </header>
+      <h1>Diceware! Roll your own!</h1>
+      <p>
+        Use the fields below to enter your dice rolls and we'll give you the word for your passphrase!
+      </p>
+      <form class="diceForm" action="/rolled" method="post">
+        <label for="roll1">Roll 1</label>
+        <input type="number" min="1" max="6" name="roll1" id="roll1" required>
+
+        <label for="roll2">Roll 2</label>
+        <input type="number" min="1" max="6" name="roll2" id="roll2" required>
+
+        <label for="roll3">Roll 3</label>
+        <input type="number" min="1" max="6" name="roll3" id="roll3" required>
+
+        <label for="roll4">Roll 4</label>
+        <input type="number" min="1" max="6" name="roll4" id="roll4" required>
+
+        <label for="roll5">Roll 5</label>
+        <input type="number" min="1" max="6" name="roll5" id="roll5" required>
+
+        <hr>
+        <input type="submit" value="Submit!">
+        <input type="reset" value="Reset">
+      </form>
+    <footer>
+    </footer>
+</body>
+</html>

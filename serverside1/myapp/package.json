@@ -11,7 +11,7 @@
     "server",
     "side"
   ],
-  "author": "Whitney Todd",
+  "author": "Ben Vaughan",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.0",

@@ -1,28 +1,44 @@
 <!-- views/pages/index.ejs -->
 
 <!DOCTYPE html>
-
 <html>
-  <head>
+<head>
     <!--
-      Call the ejs include command and privdde the path to the partial to include.
-      Path is relative to this file
-   -->
-   <!-- Include our head.ejs file -->
-   <% include ../partials/head %>
-  </head>
-  <body>
+        Call the ejs include command and provide the path to the
+        partial to include.  Path is relative to this file.
+
+        the bracket & % tags are used by the EJS templating engine and
+        contain instructions for the engine to follow.
+    -->
+    <!-- Include our head.ejs file -->
+    <% include ../partials/head %>
+</head>
+<body>
     <header>
-      <!-- Include the header of the page -->
-      <% include ../partials/header %>
+        <!-- Include the header of the page -->
+        <% include ../partials/header %>
     </header>
-    <h3><%= tagline %></h3> <!-- use the = sign when outputting the value -->
+    <!--
+        include the tagline string we passed in the app.get 'index' route.
+        this opening EJS tag includes and '=' sign.  This tells EJS to output the value of the string.
+    -->
+    <h3><%= tagline %></h3>
+
     <h4>Friends</h4>
-    <% friends.forEach(function(friend){ %>
-      <li><%= friend.name %></li>
+    <!-- begin a loop over the 'friends' dataset -->
+    <% friends.forEach(function(friend) { %> <!-- break out of the EJS instructions momentariyly -->
+        <!--
+            add an opening html tag, jump back to EJS to output the value of the member of the array we're currently looping over.  Close the EJS tag and add the closing html tag
+        -->
+        <li><%= friend.name %></li>
+        <!--
+            Jump back into EJS to finish the loop
+        -->
     <% }); %>
+
     <footer>
-      <% include ../partials/footer %>
+        <!-- Use EJS again to include our footer partial -->
+        <% include ../partials/footer %>
     </footer>
-  </body>
+</body>
 </html>
