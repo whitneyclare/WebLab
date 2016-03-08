@@ -7,26 +7,75 @@ $(document).ready(function(){
   var letters = $('#letters'); // container that holds the letter panels of the actual word to guess
   var turn_count; // number of turns remaining (variable placeholder)
 
-  // An array of words to choose a random one for someone to guess.
-  // Obviously more words makes for a better game (we can worry about that later).
-  var words = ["hangman", "boo", "happy", "sad", "tgif", "friday", "beer"];
+  var word = "hangman";
 
+//Add letter tiles
   for(var i=97; i <= 122; i++){
       var letter = String.fromCharCode(i);
       $('<span data-letter="'+letter+'">'+ letter + '</span>')
         .addClass('letter')
         .appendTo('#guesses');
     }
+
+//Determine number of letters in word & add tiles
+displayWordSpaces(word);
+
+function displayWordSpaces(word){
+      for(var i = 0; i < word.length; i++) { // make a tile for each letter in the word to guess.
+          var element = $('<span />'); // create a span element
+          element.addClass('letter'); // add a `letter` class
+          element.data('letter', word[i]); // add a data attribute `letter` with the letter value.
+          element.html('&nbsp;'); // add a blank space inside the html tag
+          element.appendTo(letters); // add it to the page inside the `letters` container.
+      }
+  }
+
+newGame.on('click', function(){
+
+
 });
 
-//Select a word
+//Turn count behavior
+turn_count = parseInt(turnSetting.val());
+
+
 // Accept guess letters
-// Determine if it is a correct or incorrect quess
-// If correct add to word boxes
-// If incorrect add box above and turn read
-// Decrease turns left by 1
+guessLetters.on('click', '.letter', function(){
+  var element = $(this);
+
+  if (turn_count === 0) {
+    return;
+  }
+
+  if (element.hasClass('selected')) {
+    return;
+  }
+
+  element.addClass('selected');
+
+  var selectedLetter = element.data('letter');
+  var notFound = true;
+
+  letters.find('.letter').each(function(){ // find all current word letters and loop over them.
+        var aLetter = $(this); // the current word letter element in the loop.
+
+       if( aLetter.data('letter') === selectedLetter ) { // check data attribute matches
+           aLetter.html(selectedLetter); // if so display
+           notFound = false; // we found one so make this false.
+       }
+    });
+
+    if(notFound){
+       turnElement.html(--turn_count); // update turn_count and display if there are no matched.
+    }
+  });
+});
+
+
+
+
+//Select a word
 
 // When guess count = 0 game over
-// New game button actions
-  // Reset turns left
+
 // When word correctly uncovered -- you win
