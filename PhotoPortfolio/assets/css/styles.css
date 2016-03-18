@@ -9,9 +9,10 @@ body {
 
 .logo {
   font-family: 'Give You Glory', cursive;
+  font-size: 20px;
   padding-left: 20px;
   float: left;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .navbar {
@@ -20,14 +21,14 @@ body {
 }
 
 h2 {
-  font-size: 13px;
+  font-size: 16px;
   margin-top: -35px;
   font-family: 'Poiret One', cursive;
   text-transform: uppercase;
 }
 
 ul {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-right: 35px;
   float: right;
 }
@@ -36,20 +37,48 @@ li{
   list-style: none;
   line-height: 30px;
   display: inline-block;
-  margin: 10px 30px;
+  margin: 5px 30px;
 }
 
 a {
   text-decoration: none;
   color: #000;
+  font-size: 16px;
+}
+
+.portfolio:hover,
+.filter li,
+img {
+  cursor: pointer;
+}
+
+.filter {
+  position: absolute;
+  display: list-item;
+  max-width: 125px;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: lightgray;
+  text-align: left;
+  opacity: 0;
+  z-index: -10;
+}
+
+.open {
+  opacity: 1;
+  z-index: 100;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 auto;
-  max-width: 100%;
-  margin: 20px 20px;
+  justify-content: flex-start;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 20px;
   padding-bottom: 15px;
   border-bottom: 1px solid lightgray;
 }
@@ -61,8 +90,34 @@ img {
 
 }
 
+/*img:last-child {
+  display: inline;
+  align-self: flex-start;
+}*/
+
 .clearfix {
   content: "";
   display: table;
   clear:both;
+}
+
+.overlay {
+  background:rgba(0,0,0, 0.7);
+  width: 80%;
+  height:80%;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  display: none;
+  text-align: center;
+  z-index: 200;
+}
+
+.overlay img {
+  height: 80%;
+  margin-top: 20px;
+}
+
+.overlay p {
+  color: white;
 }

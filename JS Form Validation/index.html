@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+        <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <h1>Our contact form</h1>
+        <div class="contactForm">
+            <form class="" action="index.html" method="post" novalidate>
+                <fieldset>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <p class="errorMsg">Please enter your first name.</p>
+                </fieldset>
+                <fieldset>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <p class="errorMsg">Please enter your last name.</p>
+                </fieldset>
+                <fieldset>
+                    <label for="emailAddr">Email Address</label>
+                    <input type="text" name="emailAddr" id="emailAddr">
+                    <p class="errorMsg">Please enter your email address.</p>
+                    <p class="emailErrorMsg">Please enter a valid email address</p>
+                </fieldset>
+                <fieldset>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <p class="errorMsg">Please enter your password.</p>
+                </fieldset>
+                <fieldset>
+                    <input type="reset" value="reset">
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

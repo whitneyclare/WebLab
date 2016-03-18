@@ -1,0 +1,37 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+}
+
+fieldset {
+    border:0;
+}
+
+form {
+
+    border: 1px solid #ccc;
+
+}
+
+fieldset .errorMsg,
+fieldset .emailErrorMsg {
+    display: none;
+    color: red;
+    font-size: 10px;
+    line-height: 1;
+}
+
+fieldset.error .errorMsg,
+fieldset.emailError .emailErrorMsg {
+    display: inline;
+}
+
+fieldset.error input {
+    border: 1px solid red;
+}

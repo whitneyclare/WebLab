@@ -3,7 +3,7 @@ var app = express();
 app.use(express.static('assets'));
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.send('index.html');
 });
 
 app.listen(3000, function () {
