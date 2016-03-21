@@ -7,6 +7,10 @@ $('.portfolio').click(function(){
    $('img').show();
 });
 
+$('.portfolio').click(function(){
+  $('.portfolio').addClass('selected');
+});
+
 // $('.portfolio').mouseout(function(){
 //   $('.filter').removeClass('open');
 // });

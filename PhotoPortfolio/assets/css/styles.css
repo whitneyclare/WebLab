@@ -7,17 +7,17 @@ body {
   max-width: 1300px;
 }
 
+.navbar {
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+}
+
 .logo {
   font-family: 'Give You Glory', cursive;
   font-size: 20px;
   padding-left: 20px;
   float: left;
   margin-bottom: 0;
-}
-
-.navbar {
-  border-bottom: 1px solid lightgray;
-  width: 100%;
 }
 
 h2 {
@@ -50,6 +50,11 @@ a {
 .filter li,
 img {
   cursor: pointer;
+}
+
+.selected {
+  background-color: lightgray;
+  padding: 10px 20px;
 }
 
 .filter {
@@ -120,4 +125,8 @@ img {
 
 .overlay p {
   color: white;
+}
+
+.overlay.leadville {
+  width: 60%;
 }
