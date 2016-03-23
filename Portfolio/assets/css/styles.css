@@ -7,7 +7,7 @@ body {
 
 .logo {
   box-sizing: border-box;
-  background-color: #53687e;
+  background-color: #618b25;
   color: #fff;
   font-size: 1.4rem;
   float: left;
@@ -16,7 +16,6 @@ body {
   padding-top: 30px;
   padding-left: 30px;
   position: fixed;
-  text-decoration: underline;
 }
 
 span {
@@ -27,7 +26,7 @@ section {
   box-sizing: border-box;
   height: 70px;
   width: 20%;
-  background-color:#2e4057;
+  background-color:#72b01d;
   margin: auto;
   float: right;
   position: fixed;
@@ -72,7 +71,7 @@ section {
 .worktab,
 .contacttab {
   width: 40vw;
-  background-color: #53687e;
+  background-color: #618b25;
   color: #fff;
 }
 
@@ -94,7 +93,7 @@ li {
 
 .closetab {
   width: 20vw;
-  background-color:#2e4057;
+  background-color:#72b01d;
   color: #fff;
 }
 
@@ -115,33 +114,43 @@ li {
 }
 
 .intro {
-  height: 100vh;
-  background: #d5dfe5;
+  height: calc(100vh - 70px);
+  margin-top: auto;
+  background: url(../img/IMG_1386.jpg) no-repeat center;
+  background-size: cover;
+  outline: 1px solid white;
+  outline-offset: -10px;
 }
 
 .intro1 {
   padding: 30px 50px;
   font-size: 42px;
+  color: #fff;
 }
 
 .intro2 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 25px;
-  padding: 10px 50px;
+  padding: 0 50px;
+  color: #fff;
 }
 
 .intro3 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   padding: 50px 50px 80px 50px;
-  width: 60%;
+  width: 40%;
+  color: #fff;
 }
 
 .boot {
-  height: 20vh;
-  background: #53687e;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
+  height: 30vh;
+  width: 30vw;
+  float: right;
+  background: #fff;
+  border-top: 5px solid lightgrey;
+  border-bottom: 5px solid lightgrey;
+  background: linear-gradient(to right, #ffc, #ccf);
 }
 
 .boot img {
@@ -152,6 +161,26 @@ li {
   display: block;
   margin: auto;
   z-index: 10;
+}
+
+.bracketed{
+	padding: 15px 20px;
+	border: 1px solid;
+	border-image: linear-gradient(to right, black 0%, black 29%, transparent 30%, transparent 70%, black 71%, black 100%);
+	border-image-slice: 1;
+}
+.bordered {
+	text-align: center;
+	margin: 20px;
+	display: flex;
+}
+.bordered::before, .bordered::after{
+	content: "";
+	flex: 1;
+	align-self: center;
+	border: 1px solid black;
+	border-width: 1px 0px 0px;
+	height: 0;
 }
 
 
