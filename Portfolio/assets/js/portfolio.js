@@ -27,7 +27,6 @@ $(document).ready(function(){
 //Click close tab and return to main page
   $('.closetab').click(function(){
     $('.menuexpand').removeClass('open');
-    $('.worktab').removeClass('selected');
     $('.projectlist').removeClass('open');
     $('.contacttab').removeClass('selected');
     $('.contactcontents').removeClass('open');

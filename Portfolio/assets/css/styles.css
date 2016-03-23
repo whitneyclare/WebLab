@@ -5,6 +5,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/******* Navbar ********/
 .logo {
   box-sizing: border-box;
   background-color: #618b25;
@@ -16,6 +17,7 @@ body {
   padding-top: 30px;
   padding-left: 30px;
   position: fixed;
+  z-index: 100;
 }
 
 span {
@@ -32,6 +34,7 @@ section {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 100;
 }
 
 .menu {
@@ -52,6 +55,7 @@ section {
   transition: .4s;
 }
 
+/******* Menu Dropdown ********/
 .menuexpand {
   position: absolute;
   display: flex;
@@ -99,15 +103,17 @@ li {
 
 .projectlist,
 .contactcontents {
-  display: flex;
-  flex-wrap: wrap;
-  position: fixed;
   top: 100px;
   left: 120px;
-  width: 100vw;
   height: calc(100vh - 70px);
 }
 
+.projectlist li,
+.contactcontents li {
+  border: none;
+}
+
+/******* Landing Page ********/
 .container {
   padding: 80px 0;
   box-sizing: border-box;
@@ -119,7 +125,7 @@ li {
   background: url(../img/IMG_1386.jpg) no-repeat center;
   background-size: cover;
   outline: 1px solid white;
-  outline-offset: -10px;
+  outline-offset: -15px;
 }
 
 .intro1 {
@@ -135,15 +141,7 @@ li {
   color: #fff;
 }
 
-.intro3 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
-  padding: 50px 50px 80px 50px;
-  width: 40%;
-  color: #fff;
-}
-
-.boot {
+/*.boot {
   height: 30vh;
   width: 30vw;
   float: right;
@@ -151,27 +149,30 @@ li {
   border-top: 5px solid lightgrey;
   border-bottom: 5px solid lightgrey;
   background: linear-gradient(to right, #ffc, #ccf);
-}
+}*/
 
 .boot img {
-  transform: scale(.4);
+  transform: scale(.3);
   background: #fff;
   border-radius: 50%;
   padding: 5px;
   display: block;
   margin: auto;
   z-index: 10;
+  margin-top: 50vh;
 }
 
+/******* Main Content ********/
 .bracketed{
 	padding: 15px 20px;
 	border: 1px solid;
 	border-image: linear-gradient(to right, black 0%, black 29%, transparent 30%, transparent 70%, black 71%, black 100%);
 	border-image-slice: 1;
+  font-size: 20px;
 }
 .bordered {
 	text-align: center;
-	margin: 20px;
+	margin: 60px 20px;
 	display: flex;
 }
 .bordered::before, .bordered::after{
@@ -185,9 +186,9 @@ li {
 
 
 .work img,
-p {
+.description {
   width: 50vw;
-  height: 100vh;
+  height: calc(100vh - 60px);
   display: inline-block;
 }
 
@@ -198,9 +199,29 @@ p {
 }
 
 .imgbkg:hover {
-  background: #6b4e71;
+  background: #9b287b;
 }
 
+.type {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin: 20px;
+  color: #736f72;
+
+}
+
+.writeup {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin: 20px;
+  width: 50%;
+}
+
+button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin: auto;
+}
 
 .clearfix {
   content: "";
