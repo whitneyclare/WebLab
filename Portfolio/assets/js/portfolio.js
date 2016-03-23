@@ -4,18 +4,12 @@ $(document).ready(function(){
   $('section').click(function(){
     $('.menuexpand').addClass('open');
     $('.worktab').addClass('selected');
+    $('.intro').hide();
     $('.work').hide();
     $('.contactcontents').hide();
   });
 
-//Click contacttab to show contactcontents & make tab active
-  $('.contacttab').click(function(){
-    $('.contacttab').addClass('selected');
-    $('.contactcontents').addClass('open').show();
-    $('.worktab').removeClass('selected');
-    $('.projectlist').hide();
-  });
-
+//Click work & contact tabs to show content & make tab active
   $('.worktab').click(function(){
     $('.worktab').addClass('selected');
     $('.projectlist').addClass('open').show();
@@ -23,12 +17,21 @@ $(document).ready(function(){
     $('.contactcontents').hide();
   });
 
-  $('.closetab').click(function(){
-    $('.worktab').hide();
+  $('.contacttab').click(function(){
+    $('.contacttab').addClass('selected');
+    $('.contactcontents').addClass('open').show();
+    $('.worktab').removeClass('selected');
     $('.projectlist').hide();
-    $('.contacttab').hide();
-    $('.contactcontents').hide();
-    $('.closetab').hide();
+  });
+
+//Click close tab and return to main page
+  $('.closetab').click(function(){
+    $('.menuexpand').removeClass('open');
+    $('.worktab').removeClass('selected');
+    $('.projectlist').removeClass('open');
+    $('.contacttab').removeClass('selected');
+    $('.contactcontents').removeClass('open');
+    $('.intro').show();
     $('.work').show();
   });
 

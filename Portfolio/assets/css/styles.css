@@ -2,7 +2,7 @@ body {
   margin-top: -10px;
   padding: 0;
   font-size: 10px;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .logo {
@@ -12,9 +12,11 @@ body {
   font-size: 1.4rem;
   float: left;
   width: 80%;
-  height: 70px;
-  padding-top: 27px;
+  height: 80px;
+  padding-top: 30px;
   padding-left: 30px;
+  position: fixed;
+  text-decoration: underline;
 }
 
 span {
@@ -28,6 +30,9 @@ section {
   background-color:#2e4057;
   margin: auto;
   float: right;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 .menu {
@@ -35,7 +40,6 @@ section {
   margin-top: 12px;
   border: 5px solid transparent;
   border-radius: 100%;
-  transition: .3s;
   cursor: pointer;
 }
 .bar {
@@ -55,7 +59,7 @@ section {
   padding-left: 0;
   z-index: -10;
   opacity: 0;
-  height: 60px;
+  height: 70px;
 }
 
 .open {
@@ -88,8 +92,6 @@ li {
   padding-top: 20px;
 }
 
-
-
 .closetab {
   width: 20vw;
   background-color:#2e4057;
@@ -104,21 +106,71 @@ li {
   top: 100px;
   left: 120px;
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 70px);
 }
 
-img,
+.container {
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+.intro {
+  height: 100vh;
+  background: #d5dfe5;
+}
+
+.intro1 {
+  padding: 30px 50px;
+  font-size: 42px;
+}
+
+.intro2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  padding: 10px 50px;
+}
+
+.intro3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  padding: 50px 50px 80px 50px;
+  width: 60%;
+}
+
+.boot {
+  height: 20vh;
+  background: #53687e;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.boot img {
+  transform: scale(.4);
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  z-index: 10;
+}
+
+
+.work img,
 p {
   width: 50vw;
-  height: 500px;
+  height: 100vh;
   display: inline-block;
 }
 
-img {
+.imgbkg {
   float: left;
+  background: #fff;
+  transition: .3s;
 }
 
-
+.imgbkg:hover {
+  background: #6b4e71;
+}
 
 
 .clearfix {
