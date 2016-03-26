@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
 </head>
 <body>
   <div class="logo clearfix">
@@ -27,18 +28,15 @@
     </ul>
     <div class="menuexpand projectlist">
       <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
+        <li><a id="proj1" href="#proj1Section">Photography Portfolio | Web Design &amp Coding</a></li>
+        <li><a id="proj2" href="#proj2Section">Mockup | Wireframe to Website</a></li>
+        <li><a id="proj3" href="#proj3Section">Zombie Hunter App | UX/UI Design</a></li>
       </ul>
     </div>
     <div class="menuexpand contactcontents">
-      <ul>
-        <li>Whitney Todd</li>
-        <li>Web Developer</li>
-        <li>Email</li>
-        <li>GitHub link</li>
-      </ul>
+      <div class="">
+        I live and work in beautiful Colorado. My passions culminate in one overarching theme: I love creating things. Whether that be stunning websites, ..., or just blueberry muffins, the creative process makes me jump from bed each morning.
+      </div>
     </div>
   </div>
 
@@ -49,19 +47,16 @@
         I'm Whitney Todd.
       </div>
       <div class="intro2">
-        Front End Web Developer | UX Designer | Maker Extraordinaire
+        Front End Web Developer | UX Designer | Maker
       </div>
-      <!-- <div class="">
-        I live and work in beautiful Colorado. My passions culminate in one overarching theme: I love creating things. Whether that be stunning websites, ..., or just blueberry muffins, the creative process makes me jump from bed each morning.
-      </div> -->
-
-        <span class="boot"><img src="img/1458718285_down.png" alt=""/></span>
-
+        <a href="#workSection">
+          <span class="boot"><img id="work" src="img/1458718285_down.png" alt=""/></span>
+        </a>
     </div>
 
-    <div class="work">
+    <div id="workSection" class="work">
       <div class="project">
-        <div class="imgbkg"><img src="" alt="" /></div>
+        <div id="proj1Section" class="imgbkg1"><img src="" alt="" /></div>
         <div class="description">
           <div class="bordered"><span class="bracketed">
             Photography Portfolio
@@ -76,10 +71,10 @@
       </div>
 
       <div class="project">
-        <div class="imgbkg"><img src="" alt="" /></div>
+        <div id="proj2Section" class="imgbkg2"><img src="" alt="" /></div>
         <div class="description">
           <div class="bordered"><span class="bracketed">
-            Mock Up
+            Mockup
           </span></div>
             <div class="type">Wireframe to Website
             </div>
@@ -90,7 +85,7 @@
       </div>
 
       <div class="project">
-        <div class="imgbkg"><img src="" alt="" /></div>
+        <div id="proj3Section" class="imgbkg3"><img src="" alt="" /></div>
         <div class="description">
           <div class="bordered"><span class="bracketed">
             Zombie Hunter App

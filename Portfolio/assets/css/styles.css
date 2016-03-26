@@ -105,12 +105,16 @@ li {
 .contactcontents {
   top: 100px;
   left: 120px;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 100px);
 }
 
 .projectlist li,
+.projectlist a,
 .contactcontents li {
   border: none;
+  text-align: left;
+  color: #736f72;
+  text-decoration: none;
 }
 
 /******* Landing Page ********/
@@ -126,6 +130,7 @@ li {
   background-size: cover;
   outline: 1px solid white;
   outline-offset: -15px;
+  position: relative;
 }
 
 .intro1 {
@@ -141,26 +146,20 @@ li {
   color: #fff;
 }
 
-/*.boot {
-  height: 30vh;
-  width: 30vw;
-  float: right;
-  background: #fff;
-  border-top: 5px solid lightgrey;
-  border-bottom: 5px solid lightgrey;
-  background: linear-gradient(to right, #ffc, #ccf);
-}*/
-
 .boot img {
   transform: scale(.3);
   background: #fff;
   border-radius: 50%;
   padding: 5px;
   display: block;
-  margin: auto;
   z-index: 10;
-  margin-top: 50vh;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -69px;
 }
+
+
 
 /******* Main Content ********/
 .bracketed{
@@ -184,21 +183,21 @@ li {
 	height: 0;
 }
 
-
 .work img,
 .description {
   width: 50vw;
-  height: calc(100vh - 60px);
+  height: 100vh;
+  padding-top: 60px;
   display: inline-block;
 }
 
-.imgbkg {
+.imgbkg1,
+.imgbkg2,
+.imgbkg3 {
   float: left;
-  background: #fff;
-  transition: .3s;
-}
-
-.imgbkg:hover {
+  width: 50vw;
+  height: 100vh;
+  display: inline-block;
   background: #9b287b;
 }
 
@@ -207,7 +206,6 @@ li {
   font-size: 16px;
   margin: 20px;
   color: #736f72;
-
 }
 
 .writeup {

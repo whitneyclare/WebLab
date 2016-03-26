@@ -34,9 +34,54 @@ $(document).ready(function(){
     $('.work').show();
   });
 
-
+setBindings();
 
 
 
 
 });
+
+
+
+function setBindings() {
+  console.log('set');
+  $('.projectlist li a').click(function(e){
+
+
+    e.preventDefault();
+
+    $('.menuexpand').removeClass('open');
+    $('.projectlist').removeClass('open');
+    $('.contacttab').removeClass('selected');
+    $('.contactcontents').removeClass('open');
+    $('.intro').show();
+    $('.work').show();
+
+    var sectionID = e.currentTarget.id + "Section";
+    $('html body').animate({
+      scrollTop: $('#' + sectionID).offset().top
+    }, 1000);
+  });
+
+  $('.boot img').click(function(e){
+    e.preventDefault();
+    var sectionID = e.currentTarget.id + "Section";
+
+    $('html body').animate({
+      scrollTop: $('#' + sectionID).offset().top
+    }, 1000);
+  });
+
+  $('.logo span').click(function(e){
+    e.preventDefault();
+    var sectionID = e.currentTarget.id + "Section";
+
+    $('html body').animate({
+      scrollTop: 0}, 1000);
+  });
+
+
+
+
+
+}

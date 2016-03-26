@@ -4,7 +4,7 @@ $(document).ready(function(){
 //Show menu when Portfolio li clicked
 $('.portfolio').click(function(){
    $('.filter').addClass('open');
-   $('img').show();
+   $('.gallery div').show();
 });
 
 $('.portfolio').click(function(){
@@ -17,17 +17,17 @@ $('.portfolio').click(function(){
 
 //Link click to category & filter images & hide menu
 $('.travelfilter').click(function(){
-  $("img[class!='travel']").hide();
+  $(".gallery div[class!='travel']").hide();
   $('.filter').removeClass('open');
 });
 
 $('.archfilter').click(function(){
-  $("img[class!='arch']").hide();
+  $(".gallery div[class!='arch']").hide();
   $('.filter').removeClass('open');
 });
 
 $('.miscfilter').click(function(){
-  $("img[class!='misc']").hide();
+  $(".gallery div[class!='misc']").hide();
   $('.filter').removeClass('open');
 });
 
