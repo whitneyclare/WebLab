@@ -119,7 +119,7 @@ li {
 
 /******* Landing Page ********/
 .container {
-  padding: 80px 0;
+  padding: 80px 0 0 0;
   box-sizing: border-box;
 }
 
@@ -162,6 +162,10 @@ li {
 
 
 /******* Main Content ********/
+.project {
+  border-bottom: 1px solid #000;
+}
+
 .bracketed{
 	padding: 15px 20px;
 	border: 1px solid;
@@ -187,6 +191,7 @@ li {
 .description {
   width: 50vw;
   height: 100vh;
+  box-sizing: border-box;
   padding-top: 60px;
   display: inline-block;
 }
@@ -198,27 +203,47 @@ li {
   width: 50vw;
   height: 100vh;
   display: inline-block;
+}
+
+.imgbkg1 {
   background: #9b287b;
 }
 
-.type {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
-  margin: 20px;
-  color: #736f72;
+.imgbkg1 img {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
 }
 
-.writeup {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
-  margin: 20px;
-  width: 50%;
+.imgbkg2 {
+  background: #d0db97;
 }
 
+.imgbkg3 {
+  background: #5c164e;
+}
+
+.type,
+.writeup,
 button {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  margin: auto;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+}
+
+.type {
+  color: #736f72;
+}
+
+/*button {
+  background: #fff;
+  transform: .5s;
+}*/
+
+button:hover {
+  background: #736f72;
 }
 
 .clearfix {

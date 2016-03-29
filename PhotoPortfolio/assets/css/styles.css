@@ -92,6 +92,7 @@ img {
   flex: 1 0 auto;
   overflow: hidden;
   width: 22vw;
+  min-width: 200px;
   height: 200px;
 }
 
@@ -101,11 +102,6 @@ img {
   height: 200px;
   /*object-fit: fill;*/
 }
-
-/*img:last-child {
-  display: inline;
-  align-self: flex-start;
-}*/
 
 .clearfix {
   content: "";
@@ -127,13 +123,10 @@ img {
 
 .overlay img {
   height: 80%;
+  width: auto;
   margin-top: 20px;
 }
 
 .overlay p {
   color: white;
-}
-
-.overlay.leadville {
-  width: 60%;
 }
