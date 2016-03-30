@@ -12,7 +12,7 @@ body {
   color: #fff;
   font-size: 1.4rem;
   float: left;
-  width: 80%;
+  width: 81%;
   height: 80px;
   padding-top: 30px;
   padding-left: 30px;
@@ -109,12 +109,33 @@ li {
 }
 
 .projectlist li,
-.projectlist a,
-.contactcontents li {
+.projectlist a {
   border: none;
   text-align: left;
   color: #736f72;
   text-decoration: none;
+}
+
+.contactcontents {
+  font-size: 18px;
+  display: block;
+  padding: 20px 150px 0 30px;
+  color: #736f72;
+}
+
+.contactinfo p,
+.contactinfo img {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.contactinfo img {
+  padding: 25px 5px 0 5px;
+}
+
+.contactinfo a img {
+  height: 30px;
+  width: 30px;
 }
 
 /******* Landing Page ********/
@@ -219,8 +240,22 @@ li {
   background: #d0db97;
 }
 
+.imgbkg2 img {
+  width: 85%;
+  height: auto;
+  margin: 7.5%;
+  padding-top: 50px;
+}
+
 .imgbkg3 {
   background: #5c164e;
+}
+
+.imgbkg3 img {
+  width: 95%;
+  height: auto;
+  margin: 2.5%;
+  padding-top: 150px;
 }
 
 .type,

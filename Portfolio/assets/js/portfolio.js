@@ -4,6 +4,7 @@ $(document).ready(function(){
   $('section').click(function(){
     $('.menuexpand').addClass('open');
     $('.worktab').addClass('selected');
+    $('.projectlist').addClass('open').show();
     $('.intro').hide();
     $('.work').hide();
     $('.contactcontents').hide();
