@@ -130,3 +130,20 @@ img {
 .overlay p {
   color: white;
 }
+
+/****** About & Contact pages ********/
+.aboutpage,
+.contactpage {
+  padding: 40px;
+}
+
+.aboutpage p,
+.contactpage div {
+  padding: 10px 50px;
+  font-size: 18px;
+}
+
+.contactpage img {
+  height: 50px;
+  width: 50px;
+}

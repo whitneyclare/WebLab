@@ -123,19 +123,20 @@ li {
   color: #736f72;
 }
 
-.contactinfo p,
-.contactinfo img {
-  display: inline-block;
-  margin-top: 0;
-}
-
-.contactinfo img {
+.findme {
   padding: 25px 5px 0 5px;
+  margin-left: 30%;
 }
 
-.contactinfo a img {
+.contactinfo {
+  margin-left: 35%;
+}
+
+.contactinfo img {
   height: 30px;
   width: 30px;
+  padding-right: 15px;
+  padding-top: 15px;
 }
 
 /******* Landing Page ********/
@@ -262,7 +263,7 @@ li {
 .writeup,
 button {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 80px;
   margin-right: 80px;
   margin-bottom: 30px;
@@ -272,12 +273,14 @@ button {
   color: #736f72;
 }
 
-/*button {
+button {
+  color: #736f72;
   background: #fff;
-  transform: .5s;
-}*/
+  transition: .5s;
+}
 
 button:hover {
+  color: #000;
   background: #736f72;
 }
 
