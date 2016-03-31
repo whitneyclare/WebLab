@@ -57,6 +57,7 @@ section {
 
 /******* Menu Dropdown ********/
 .menuexpand {
+  box-sizing: border-box;
   position: absolute;
   display: flex;
   padding-left: 0;
@@ -86,6 +87,7 @@ section {
 }
 
 li {
+  box-sizing: border-box;
   padding-bottom: 10px;
   list-style: none;
   font-size: 1.3rem;
@@ -148,7 +150,7 @@ li {
 .intro {
   height: calc(100vh - 70px);
   margin-top: auto;
-  background: url(../img/IMG_1386.jpg) no-repeat center;
+  background: url(../img/IMG_1386.JPG) no-repeat center;
   background-size: cover;
   outline: 1px solid white;
   outline-offset: -15px;
@@ -244,6 +246,7 @@ li {
 .imgbkg2 img {
   width: 85%;
   height: auto;
+  max-height: 95vh;
   margin: 7.5%;
   padding-top: 50px;
 }
