@@ -12,7 +12,7 @@ body {
   color: #fff;
   font-size: 1.4rem;
   float: left;
-  width: 81%;
+  width: 80%;
   height: 80px;
   padding-top: 30px;
   padding-left: 30px;
@@ -141,6 +141,10 @@ li {
   padding-top: 15px;
 }
 
+.contactinfo img:hover {
+  transform: scale(1.2);
+}
+
 /******* Landing Page ********/
 .container {
   padding: 80px 0 0 0;
@@ -213,7 +217,7 @@ li {
 
 .work img,
 .description {
-  width: 50vw;
+  width: 49vw;
   height: 100vh;
   box-sizing: border-box;
   padding-top: 60px;
